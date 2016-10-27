@@ -1,0 +1,21 @@
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+/*--
+	Common Css
+--*/
+
+body {
+    font-family: $open-sans;
+    -webkit-font-smoothing: antialiased;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a, a:active, a:focus, a:active {
+	text-decoration:none !important;
+}

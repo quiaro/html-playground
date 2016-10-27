@@ -1,0 +1,37 @@
+{
+  "name": "html-playground",
+  "description": "Experiments with HTML & CSS",
+  "main": "gulpfile.js",
+  "authors": [
+    "quiaro"
+  ],
+  "license": "MIT",
+  "keywords": [],
+  "homepage": "index.html",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.7",
+    "animate.css": "animate-css#~3.5.2",
+    "tween.js": "tweenjs#~16.3.5",
+    "jquery": "^3.1.1"
+  },
+  "overrides": {
+    "animate.css": {
+      "main": "animate.css"
+    },
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.min.css",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    }
+  }
+}
