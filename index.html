@@ -13,16 +13,34 @@
 </head>
 
 <body>
-  <section>
-    <div class="pulse-wajs" style="width: 150px;">Hello world!</div>
-  </section
+  <table>
+    <thead>
+      <tr>
+        <th>GSAP</th>
+        <th>Web Animations API</th>
+      </tr>
+    </thead>
+    <tbody>
+      <td>
+        <div class="pulse-gsap" style="width: 150px;">Hello world!</div>
+      </td>
+      <td>
+        <div class="pulse-wajs" style="width: 150px;">Hello world!</div>
+      </td>
+    </tbody>
+  </table>
 
-  <!-- Js -->
+  <!-- Vendor -->
   <script src="lib/web-animations-js/web-animations.min.js"></script>
+  <script src="lib/gsap/src/uncompressed/TweenMax.js"></script>
+
   <script src="lib/jquery/dist/jquery.min.js"></script>
   <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="lib/tween.js/src/Tween.js"></script>
+
+  <!-- Source -->
   <script src="js/wajs.js"></script>
+  <script src="js/gsap.js"></script>
 </body>
 
 </html>

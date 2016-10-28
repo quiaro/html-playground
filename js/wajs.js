@@ -3,6 +3,10 @@
 
 /* global jQuery */
 
+/*
+ * Animation samples using the web animations API
+ */
+
 (function($) {
   'use strict';
 
@@ -12,7 +16,7 @@
     transform: ['scale(0.5)', 'scale(1)']
   }, {
     direction: 'alternate',
-    duration: 500,
+    duration: 2000,
     iterations: Infinity
   });
 })(jQuery);

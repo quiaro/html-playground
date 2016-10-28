@@ -19,7 +19,8 @@
     "animate.css": "animate-css#~3.5.2",
     "tween.js": "tweenjs#~16.3.5",
     "jquery": "^3.1.1",
-    "web-animations-js": "^2.2.2"
+    "web-animations-js": "^2.2.2",
+    "gsap": "greensock#^1.19.0"
   },
   "overrides": {
     "animate.css": {
