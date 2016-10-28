@@ -18,7 +18,8 @@
     "bootstrap": "~3.3.7",
     "animate.css": "animate-css#~3.5.2",
     "tween.js": "tweenjs#~16.3.5",
-    "jquery": "^3.1.1"
+    "jquery": "^3.1.1",
+    "web-animations-js": "^2.2.2"
   },
   "overrides": {
     "animate.css": {
