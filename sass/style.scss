@@ -19,3 +19,20 @@ ul {
 a, a:active, a:focus, a:active {
 	text-decoration:none !important;
 }
+
+/* Hello world animation */
+@keyframes pulse-hello {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.pulse-css {
+  animation: pulse-hello 2s linear 0s infinite alternate;
+}
+/* EO: Hello world animation */

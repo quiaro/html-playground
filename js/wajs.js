@@ -10,6 +10,7 @@
 (function($) {
   'use strict';
 
+  /* Hello world animation */
   var elem = document.querySelector('.pulse-wajs');
   elem.animate({
     opacity: [0.5, 1],
@@ -19,4 +20,5 @@
     duration: 2000,
     iterations: Infinity
   });
+  /* EO: Hello world animation */
 })(jQuery);

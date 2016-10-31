@@ -9,6 +9,7 @@
 (function($) {
   'use strict';
 
+  /* Hello world animation */
   var elem = document.querySelector('.pulse-gsap');
   TweenMax.fromTo(elem, 2, {
     opacity: 0.5,
@@ -23,4 +24,5 @@
     yoyo: true,
     ease: 'Linear'
   });
+  /* EO: Hello world animation */
 })(jQuery);
