@@ -32,6 +32,24 @@ table {
   tbody {
     td {
       padding: 10px;
+
+      &.rain {
+        padding: 0;
+        position: relative;
+
+        > div.message {
+          margin: 20px;
+          color: white;
+          position: absolute;
+        }
+
+        &.rain-wajs {
+
+          .wajs-drop {
+            opacity: 0;
+          }
+        }
+      }
     }
   }
 }
@@ -76,3 +94,47 @@ table {
   animation: emphasis 700ms ease-in-out 10ms infinite alternate forwards;
 }
 /* EO: Emphasis animation */
+
+/* Rain animation */
+@keyframes rain-drop {
+  0% {
+    opacity: 1;
+    transform: scale(0.01);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.rain-drop {
+  opacity: 0;
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  left: 1.2em;
+  top: 0.5em;
+  background: rgba(87, 139, 255, 0.55);
+  border-radius: 50%;
+  animation: rain-drop 1400ms cubic-bezier(.8,.1,1,.04) 200ms;
+
+  &.med {
+    width: 3em;
+    height: 3em;
+    left: 5.5em;
+    top: 1em;
+    animation: rain-drop 900ms cubic-bezier(.8,.1,1,.04) 1200ms;
+  }
+  &.lg {
+    width: 5em;
+    height: 5em;
+    left: 2em;
+    top: 1em;
+    animation: rain-drop 1600ms cubic-bezier(.8,.1,1,.04) 2000ms;
+  }
+
+  &.finished {
+    opacity: 1;
+    background: rgba(87, 139, 255, 1);
+  }
+}
+/* EO: Rain animation */
