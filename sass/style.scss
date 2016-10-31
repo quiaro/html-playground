@@ -20,6 +20,22 @@ a, a:active, a:focus, a:active {
 	text-decoration:none !important;
 }
 
+table {
+  margin: 30px auto;
+  width: 80vw;
+  thead {
+    th {
+      font-size: 1.6em;
+      width: 33%;
+    }
+  }
+  tbody {
+    td {
+      padding: 10px;
+    }
+  }
+}
+
 /* Hello world animation */
 @keyframes pulse-hello {
   0% {
@@ -36,3 +52,27 @@ a, a:active, a:focus, a:active {
   animation: pulse-hello 2s linear 0s infinite alternate;
 }
 /* EO: Hello world animation */
+
+/* Emphasis animation */
+@keyframes emphasis {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(.5);
+    opacity: .5;
+  }
+  78.75% {
+    transform: scale(.667);
+    opacity: .667;
+  }
+  100% {
+    transform: scale(.6);
+    opacity: .6;
+  }
+}
+.emphasis-css {
+  animation: emphasis 700ms ease-in-out 10ms infinite alternate forwards;
+}
+/* EO: Emphasis animation */
