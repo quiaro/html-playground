@@ -3,6 +3,10 @@
     "installedESLint": true,
     "rules": {
         "prefer-arrow-callback": "off",
-        "comma-dangle": ["error", "never"]
+        "comma-dangle": ["error", "never"],
+        "new-cap": ["error", { "newIsCap": false }],
+        "no-console": ["error", {
+          "allow": ["info", "warn", "error"]
+        }]
     }
 }

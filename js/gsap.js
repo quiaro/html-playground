@@ -1,5 +1,6 @@
 /* eslint-env browser */
 /* eslint max-len: ["error", 120, { "ignoreComments": true }] */
+/* eslint no-unused-vars: "off" */
 
 /* global jQuery, TweenMax, TimelineMax */
 
@@ -110,7 +111,7 @@
     });
     $container.prepend($el);
 
-    let tween = new TweenMax.fromTo($el, drop.duration / 800, {
+    const tween = new TweenMax.fromTo($el, drop.duration / 800, {
       scale: 0.01,
       opacity: 1
     }, {
